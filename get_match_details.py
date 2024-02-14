@@ -296,8 +296,8 @@ def scrape_match(url: str) -> dict:
 
     match_header_date_div = soup.find('div', class_='match-header-date')
     date_time_div = match_header_date_div.find_all('div', class_='moment-tz-convert') if match_header_date_div else None
-    date = date_time_div[0].text.strip() if date_time_div > 0 else None
-    time = date_time_div[1].text.strip() if date_time_div > 1 else None
+    date = date_time_div[0].text.strip() if len(date_time_div) > 0 else None
+    time = date_time_div[1].text.strip() if len(date_time_div) > 1 else None
 
     # Map-specific details
     stats_container_div = soup.find('div', class_='vm-stats-container')
@@ -319,10 +319,14 @@ def scrape_match(url: str) -> dict:
 
     return match_data
 
+# Read the scraped URLs
+with open('scraped_urls.log', 'r') as log_file:
+    scraped_urls = set(line.strip() for line in log_file)
+
 # Scraping half of the URLs first
 half_length = len(urls) // 2
-print(f'Scraping {half_length} matches')
-urls_to_scrape = urls[:half_length]
+urls_to_scrape = [url for url in urls[:half_length] if url not in scraped_urls]
+print(f'Scraping {len(urls_to_scrape)} URLs')
 data = []
 
 with open('scraped_urls.log', 'a') as log_file:
