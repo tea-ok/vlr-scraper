@@ -2,6 +2,7 @@ import json
 import urllib.request
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from http.client import RemoteDisconnected
 from tqdm import tqdm
 import os
 import time
@@ -261,11 +262,21 @@ def scrape_game(game_div: BeautifulSoup) -> dict:
     return game_data
 
 def scrape_match(url: str) -> dict:
-    response = opener.open(url)
-    if response.status != 200:
-        return None
+    retry_attempts = 3
+    for attempt in range(retry_attempts):
+        try:
+            response = opener.open(url)
+            if response.status != 200:
+                return None
+            else:
+                content = response.read()
+                break
+        except RemoteDisconnected as e:
+            print(f'Attempt {attempt + 1}/{retry_attempts} failed. Retrying...')
+            time.sleep(5)
     else:
-        content = response.read()
+        print(f'Failed to scrape {url}')
+        return None
 
     soup = BeautifulSoup(content, 'html.parser')
 
@@ -319,14 +330,17 @@ def scrape_match(url: str) -> dict:
 
     return match_data
 
-# Read the scraped URLs
+# Read the URLs that have already been scraped from the log file
 with open('scraped_urls.log', 'r') as log_file:
     scraped_urls = set(line.strip() for line in log_file)
 
-# Scraping half of the URLs first
-half_length = len(urls) // 2
-urls_to_scrape = [url for url in urls[:half_length] if url not in scraped_urls]
+# Convert full list of URLs (including scraped and not scraped) to a set
+urls_set = set(urls)
+
+# Get the URLs that haven't been scraped yet
+urls_to_scrape = list(urls_set - scraped_urls)
 print(f'Scraping {len(urls_to_scrape)} URLs')
+
 data = []
 
 with open('scraped_urls.log', 'a') as log_file:
