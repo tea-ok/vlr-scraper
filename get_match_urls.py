@@ -4,7 +4,7 @@ import time
 from tqdm import tqdm
 import json
 
-def req(url, page):
+def req(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -22,8 +22,8 @@ def req(url, page):
 
 match_urls = []
 
-for page in tqdm(range(1, 476), desc="Scraping pages"): # Hardcoded number of pages, could change in the future
-    match_urls += req(f'https://www.vlr.gg/matches/results?page={page}', page)
+for page in tqdm(range(1, 476), desc="Scraping pages"): # Hardcoded number of pages, could change this in the future
+    match_urls += req(f'https://www.vlr.gg/matches/results?page={page}')
     time.sleep(2)
 
 with open('match_urls.json', 'w') as f:

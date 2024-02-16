@@ -1,8 +1,9 @@
 import json
 import urllib.request
+from urllib.error import URLError
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from http.client import RemoteDisconnected
+from http.client import RemoteDisconnected, IncompleteRead
 from tqdm import tqdm
 import os
 import time
@@ -271,8 +272,8 @@ def scrape_match(url: str) -> dict:
             else:
                 content = response.read()
                 break
-        except RemoteDisconnected as e:
-            print(f'Attempt {attempt + 1}/{retry_attempts} failed. Retrying...')
+        except (RemoteDisconnected, IncompleteRead, URLError) as e:
+            print(f'Error occurred: {str(e)}. Retrying ({attempt+1}/{retry_attempts})...')
             time.sleep(5)
     else:
         print(f'Failed to scrape {url}')
