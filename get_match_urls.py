@@ -44,5 +44,5 @@ else:
         match_urls += req(f'https://www.vlr.gg/matches/results?page={page}')
         time.sleep(2)
 
-    with open('match_urls.json', 'w') as f:
+    with open('./data/match_urls.json', 'w') as f:
         json.dump(match_urls, f)

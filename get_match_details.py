@@ -228,7 +228,7 @@ def scrape_game(game_div: BeautifulSoup) -> dict:
     """
     Scrapes the game details from the game div, calls extract_overview and extract_player_info.
     """
-    # Check if the div contains details
+    # Check if the div is for a specific game (skipping the match overview div)
     if not game_div.find('div', class_='vm-stats-game-header'):
         return None
 
@@ -353,7 +353,7 @@ def scrape_match(url: str) -> dict:
     return match_data
 
 # Read the URLs that have already been scraped from the log file, create it if it doesn't exist
-with open('scraped_urls.log', 'a+') as log_file:
+with open('./data/scraped_urls.log', 'a+') as log_file:
     log_file.seek(0)
     scraped_urls = set(line.strip() for line in log_file)
 
@@ -362,7 +362,7 @@ urls_to_scrape = list(urls - scraped_urls)
 
 data = []
 
-with open('scraped_urls.log', 'a') as log_file:
+with open('./data/scraped_urls.log', 'a') as log_file:
 
     for i, url in enumerate(tqdm(urls_to_scrape[:5], desc='Scraping matches')):
         scraped_data = scrape_match(url)
@@ -382,7 +382,7 @@ with open('scraped_urls.log', 'a') as log_file:
         time.sleep(0.5)
 
     if data:
-        with open('scraped_data.json', 'a') as data_file:
+        with open('./data/scraped_data.json', 'a') as data_file:
             for item in data:
                 json.dump(item, data_file)
                 data_file.write('\n')
