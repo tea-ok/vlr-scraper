@@ -23,7 +23,7 @@ opener = opener = urllib.request.build_opener(
 
 # Load the URLs from the JSON file
 with open('./data/match_urls.json', 'r') as f:
-    urls = json.load(f)
+    urls = set(json.load(f))
 
 def extract_overview(team_div: BeautifulSoup) -> dict:
     # Extract the team's score
@@ -293,12 +293,14 @@ def scrape_match(url: str) -> dict:
     team_names = [div.text.strip() for div in match_header_vs_div.find_all('div', class_='wf-title-med')] if match_header_vs_div else [None, None]
 
     scoreline_div = soup.find('div', class_='match-header-vs-score')
-    winner_score_element = scoreline_div.find('span', class_='match-header-vs-score-winner')
-    winner_score = winner_score_element.text.strip() if winner_score_element else ''
-
-    loser_score_element = scoreline_div.find('span', class_='match-header-vs-score-loser')
-    loser_score = loser_score_element.text.strip() if loser_score_element else ''
-    scoreline = f'{winner_score}:{loser_score}'
+    spoiler_div = scoreline_div.find('div', class_='js-spoiler')
+    if spoiler_div:
+        score_elements = spoiler_div.find_all('span')
+        if score_elements:
+            team_1_score = score_elements[0].text.strip()
+            team_2_score = score_elements[-1].text.strip()
+    else:
+        team_1_score = team_2_score = ''
 
     stage_div = soup.find('div', class_='match-header-vs-note')
     stage = stage_div.text.strip() if stage_div else None # Stage, e.g. Final, Semi-final, etc.
@@ -321,26 +323,25 @@ def scrape_match(url: str) -> dict:
         'team_2': team_names[1],
         'event': event_name,
         'event_series': event_series,
-        'scoreline': scoreline,
+        'team_1_score': team_1_score,
+        'team_2_score': team_2_score,
         'stage': stage,
         'match_type': match_type,
         'date': date,
         'time': time,
-        'games': game_data
+        'games': game_data,
+        'url': url
     }
 
     return match_data
 
-# Read the URLs that have already been scraped from the log file
-with open('scraped_urls.log', 'r') as log_file:
+# Read the URLs that have already been scraped from the log file, create it if it doesn't exist
+with open('scraped_urls.log', 'a+') as log_file:
+    log_file.seek(0)
     scraped_urls = set(line.strip() for line in log_file)
 
-# Convert full list of URLs (including scraped and not scraped) to a set
-urls_set = set(urls)
-
 # Get the URLs that haven't been scraped yet
-urls_to_scrape = list(urls_set - scraped_urls)
-print(f'Scraping {len(urls_to_scrape)} URLs')
+urls_to_scrape = list(urls - scraped_urls)
 
 data = []
 
