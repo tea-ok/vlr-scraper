@@ -1,6 +1,6 @@
 # VLR Scraper
 
-This repository contains two scripts that scrape the vlr.gg website for match and player data. The first script, `get_match_urls.py` scrapes the matches page and saves the urls of all the matches to a file. The second script, `get_match_details.py` scrapes the match pages (including player data) from those urls and saves the data to a JSON file in NDJSON format.
+This repository contains two scripts that scrape the [vlr.gg](https://www.vlr.gg) website for match and player data. The first script, `get_match_urls.py` scrapes the matches page and saves the urls of all the matches to a file. The second script, `get_match_details.py` scrapes the match pages (including player data) from those urls and saves the data to a JSON file in NDJSON format.
 
 ## Usage
 
