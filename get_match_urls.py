@@ -1,10 +1,24 @@
 import requests
 from bs4 import BeautifulSoup
+from typing import Optional
 import time
 from tqdm import tqdm
 import json
 
-def req(url):
+def get_last_page(url: str) -> Optional[int]:
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    action_container = soup.find('div', class_='action-container')
+    if action_container:
+        pages_div = action_container.find('div', class_='action-container-pages')
+        if pages_div:
+            page_links = pages_div.find_all('a', class_='btn mod-page')
+            if page_links:
+                return int(page_links[-1].text.strip())
+    return None
+
+def req(url: str) -> list[str]:
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -20,11 +34,15 @@ def req(url):
 
     return match_urls
 
+last_page = get_last_page('https://www.vlr.gg/matches/results')
 match_urls = []
 
-for page in tqdm(range(1, 476), desc="Scraping pages"): # Hardcoded number of pages, could change this in the future
-    match_urls += req(f'https://www.vlr.gg/matches/results?page={page}')
-    time.sleep(2)
+if not last_page:
+    print('Error: Could not find last page. Try hardcoding it into the loop in stead.')
+else:
+    for page in tqdm(range(1, last_page), desc="Scraping pages"):
+        match_urls += req(f'https://www.vlr.gg/matches/results?page={page}')
+        time.sleep(2)
 
-with open('match_urls.json', 'w') as f:
-    json.dump(match_urls, f)
+    with open('match_urls.json', 'w') as f:
+        json.dump(match_urls, f)

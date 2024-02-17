@@ -1,0 +1,4 @@
+tqdm
+requests
+python-dotenv
+beautifulsoup4
