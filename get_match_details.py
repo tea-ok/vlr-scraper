@@ -26,6 +26,10 @@ with open('./data/match_urls.json', 'r') as f:
     urls = set(json.load(f))
 
 def extract_overview(team_div: BeautifulSoup) -> dict:
+    """
+    Extracts the game overview from the team div (game and match are used interchangeably here).
+    """
+
     # Extract the team's score
     team_score_div = team_div.find('div', class_='score')
     team_score = team_score_div.text.strip() if team_score_div else None
@@ -51,6 +55,11 @@ def extract_overview(team_div: BeautifulSoup) -> dict:
     return team_overview
 
 def extract_player_info(table: BeautifulSoup) -> list[dict]:
+    """
+    Extracts each player's stats from the players table.
+    It is called for each player table (two per game, one for each team).
+    """
+
     player_info = []
 
     tbody = table.find('tbody')
@@ -216,6 +225,9 @@ def extract_player_info(table: BeautifulSoup) -> list[dict]:
     return player_info
 
 def scrape_game(game_div: BeautifulSoup) -> dict:
+    """
+    Scrapes the game details from the game div, calls extract_overview and extract_player_info.
+    """
     # Check if the div contains details
     if not game_div.find('div', class_='vm-stats-game-header'):
         return None
@@ -263,6 +275,11 @@ def scrape_game(game_div: BeautifulSoup) -> dict:
     return game_data
 
 def scrape_match(url: str) -> dict:
+    """
+    Main function to scrape match details, calls scrape_game.
+    Includes some error handling and retries for issues I encountered.
+    """
+
     retry_attempts = 3
     for attempt in range(retry_attempts):
         try:
@@ -286,8 +303,8 @@ def scrape_match(url: str) -> dict:
     event_a = super_div.find('a', class_='match-header-event') if super_div else None
     inner_div = event_a.find('div') if event_a else None
     event_divs = inner_div.find_all('div') if inner_div else None
-    event_name = event_divs[0].text.strip() if event_divs and len(event_divs) > 0 else ''
-    event_series = event_divs[1].text.strip() if event_divs and len(event_divs) > 1 else ''
+    event_name = event_divs[0].text.strip().replace('\n', '').replace('\t', '') if event_divs and len(event_divs) > 0 else ''
+    event_series = event_divs[1].text.strip().replace('\n', '').replace('\t', '') if event_divs and len(event_divs) > 1 else ''
 
     match_header_vs_div = soup.find('div', class_='match-header-vs')
     team_names = [div.text.strip() for div in match_header_vs_div.find_all('div', class_='wf-title-med')] if match_header_vs_div else [None, None]
@@ -303,7 +320,7 @@ def scrape_match(url: str) -> dict:
         team_1_score = team_2_score = ''
 
     stage_div = soup.find('div', class_='match-header-vs-note')
-    stage = stage_div.text.strip() if stage_div else None # Stage, e.g. Final, Semi-final, etc.
+    stage = stage_div.text.strip().replace('\n', '').replace('\t', '') if stage_div else None # Stage, e.g. Final, Semi-final, etc.
 
     match_type_divs = soup.find_all('div', class_='match-header-vs-note') # Match type, e.g. Best of 3, Best of 5, etc.
     match_type = match_type_divs[1].text.strip() if len(match_type_divs) > 1 else None
@@ -347,7 +364,7 @@ data = []
 
 with open('scraped_urls.log', 'a') as log_file:
 
-    for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
+    for i, url in enumerate(tqdm(urls_to_scrape[:5], desc='Scraping matches')):
         scraped_data = scrape_match(url)
         if scraped_data is None:
             continue
