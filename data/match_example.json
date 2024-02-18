@@ -1,737 +1,727 @@
 {
-    "team_1": "Tales of Eastern",
-    "team_2": "Totoro Gaming",
-    "event": "Energy Vision",
-    "event_series": "Playoffs: Upper Semifinals",
-    "team_1_score": "0",
-    "team_2_score": "2",
+    "team_1": "Paper Rex",
+    "team_2": "ORDER",
+    "event": "Champions Tour Asia-Pacific Stage 2: Challengers Playoffs",
+    "event_series": "Group Stage: Winner's (C)",
+    "team_1_score": "2",
+    "team_2_score": "0",
     "stage": "final",
     "match_type": "Bo3",
-    "date": "Thursday, August 12th",
-    "time": "1:00 AM EST",
+    "date": "2022-06-18",
+    "time": "23:00:00",
     "games": [
         {
-            "map": { "name": "Haven", "duration": "36:03" },
+            "map": {
+                "name": "Haven\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tPICK",
+                "duration": "41:46"
+            },
             "team_left": {
                 "team_overview": {
-                    "name": "Tales of Eastern",
-                    "score": "7",
-                    "t_side_score": "2",
+                    "name": "Paper Rex",
+                    "score": "13",
+                    "t_side_score": "8",
                     "ct_side_score": "5"
                 },
                 "players": [
                     {
-                        "name": "whzy",
-                        "team_code": "Toe",
-                        "country": "China",
+                        "name": "f0rsakeN",
+                        "team_code": "PRX",
+                        "country": "Indonesia",
                         "agent": "Jett",
                         "r_stats": {
-                            "both": "0.85",
-                            "t": "0.19",
-                            "ct": "1.28"
-                        },
-                        "acs_stats": { "both": "196", "t": "56", "ct": "290" },
-                        "kill_stats": { "both": "14", "t": "2", "ct": "12" },
-                        "death_stats": { "both": "17", "t": "7", "ct": "10" },
-                        "assist_stats": { "both": "0", "t": "0", "ct": "0" },
-                        "kd_diff_stats": {
-                            "both": "-3",
-                            "t": "-5",
-                            "ct": "+2"
-                        },
-                        "kast_stats": {
-                            "both": "60%",
-                            "t": "38%",
-                            "ct": "75%"
-                        },
-                        "adr_stats": { "both": "119", "t": "27", "ct": "180" },
-                        "headshot_stats": {
-                            "both": "34%",
-                            "t": "33%",
-                            "ct": "35%"
-                        },
-                        "fk_stats": { "both": "5", "t": "1", "ct": "4" },
-                        "fd_stats": { "both": "2", "t": "2", "ct": "0" },
-                        "fk_diff_stats": { "both": "+3", "t": "-1", "ct": "+4" }
-                    },
-                    {
-                        "name": "Yuk1no",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Omen",
-                        "r_stats": {
-                            "both": "0.83",
-                            "t": "1.22",
-                            "ct": "0.56"
-                        },
-                        "acs_stats": { "both": "206", "t": "313", "ct": "136" },
-                        "kill_stats": { "both": "14", "t": "9", "ct": "5" },
-                        "death_stats": { "both": "16", "t": "6", "ct": "10" },
-                        "assist_stats": { "both": "3", "t": "1", "ct": "2" },
-                        "kd_diff_stats": {
-                            "both": "-2",
-                            "t": "+3",
-                            "ct": "-5"
-                        },
-                        "kast_stats": {
-                            "both": "60%",
-                            "t": "88%",
-                            "ct": "42%"
-                        },
-                        "adr_stats": { "both": "131", "t": "191", "ct": "92" },
-                        "headshot_stats": {
-                            "both": "45%",
-                            "t": "39%",
-                            "ct": "60%"
-                        },
-                        "fk_stats": { "both": "0", "t": "0", "ct": "0" },
-                        "fd_stats": { "both": "3", "t": "1", "ct": "2" },
-                        "fk_diff_stats": { "both": "-3", "t": "-1", "ct": "-2" }
-                    },
-                    {
-                        "name": "K1te",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Skye",
-                        "r_stats": {
-                            "both": "0.72",
-                            "t": "0.60",
-                            "ct": "0.80"
-                        },
-                        "acs_stats": { "both": "149", "t": "149", "ct": "150" },
-                        "kill_stats": { "both": "9", "t": "4", "ct": "5" },
-                        "death_stats": { "both": "16", "t": "7", "ct": "9" },
-                        "assist_stats": { "both": "3", "t": "1", "ct": "2" },
-                        "kd_diff_stats": {
-                            "both": "-7",
-                            "t": "-3",
-                            "ct": "-4"
-                        },
-                        "kast_stats": {
-                            "both": "55%",
-                            "t": "50%",
-                            "ct": "58%"
-                        },
-                        "adr_stats": { "both": "110", "t": "93", "ct": "122" },
-                        "headshot_stats": {
-                            "both": "19%",
-                            "t": "33%",
-                            "ct": "13%"
-                        },
-                        "fk_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fk_diff_stats": { "both": "0", "t": "0", "ct": "0" }
-                    },
-                    {
-                        "name": "cBr",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Kayo",
-                        "r_stats": {
-                            "both": "0.57",
-                            "t": "0.48",
-                            "ct": "0.63"
-                        },
-                        "acs_stats": { "both": "123", "t": "164", "ct": "97" },
-                        "kill_stats": { "both": "8", "t": "4", "ct": "4" },
-                        "death_stats": { "both": "16", "t": "7", "ct": "9" },
-                        "assist_stats": { "both": "2", "t": "1", "ct": "1" },
-                        "kd_diff_stats": {
-                            "both": "-8",
-                            "t": "-3",
-                            "ct": "-5"
-                        },
-                        "kast_stats": {
-                            "both": "45%",
-                            "t": "38%",
-                            "ct": "50%"
-                        },
-                        "adr_stats": { "both": "80", "t": "106", "ct": "63" },
-                        "headshot_stats": {
-                            "both": "17%",
-                            "t": "25%",
-                            "ct": "11%"
-                        },
-                        "fk_stats": { "both": "1", "t": "1", "ct": "0" },
-                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fk_diff_stats": { "both": "0", "t": "+1", "ct": "-1" }
-                    },
-                    {
-                        "name": "GugeDD",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Killjoy",
-                        "r_stats": {
-                            "both": "0.56",
-                            "t": "0.47",
-                            "ct": "0.61"
-                        },
-                        "acs_stats": { "both": "151", "t": "117", "ct": "175" },
-                        "kill_stats": { "both": "10", "t": "3", "ct": "7" },
-                        "death_stats": { "both": "18", "t": "7", "ct": "11" },
-                        "assist_stats": { "both": "3", "t": "2", "ct": "1" },
-                        "kd_diff_stats": {
-                            "both": "-8",
-                            "t": "-4",
-                            "ct": "-4"
-                        },
-                        "kast_stats": {
-                            "both": "60%",
-                            "t": "75%",
-                            "ct": "50%"
-                        },
-                        "adr_stats": { "both": "101", "t": "72", "ct": "120" },
-                        "headshot_stats": {
-                            "both": "32%",
-                            "t": "14%",
-                            "ct": "45%"
-                        },
-                        "fk_stats": { "both": "2", "t": "1", "ct": "1" },
-                        "fd_stats": { "both": "4", "t": "2", "ct": "2" },
-                        "fk_diff_stats": { "both": "-2", "t": "-1", "ct": "-1" }
-                    }
-                ]
-            },
-            "team_right": {
-                "team_overview": {
-                    "name": "Totoro Gaming",
-                    "score": "13",
-                    "t_side_score": "7",
-                    "ct_side_score": "6"
-                },
-                "players": [
-                    {
-                        "name": "Midnight",
-                        "team_code": "TTG",
-                        "country": "China",
-                        "agent": "Astra",
-                        "r_stats": {
                             "both": "1.44",
-                            "t": "1.60",
-                            "ct": "1.19"
+                            "t": "1.72",
+                            "ct": "1.07"
                         },
-                        "acs_stats": { "both": "276", "t": "310", "ct": "227" },
-                        "kill_stats": { "both": "18", "t": "12", "ct": "6" },
-                        "death_stats": { "both": "9", "t": "5", "ct": "4" },
-                        "assist_stats": { "both": "8", "t": "6", "ct": "2" },
+                        "acs_stats": { "both": "281", "t": "343", "ct": "200" },
+                        "kill_stats": { "both": "22", "t": "15", "ct": "7" },
+                        "death_stats": { "both": "13", "t": "8", "ct": "5" },
+                        "assist_stats": { "both": "3", "t": "3", "ct": "0" },
                         "kd_diff_stats": {
                             "both": "+9",
                             "t": "+7",
                             "ct": "+2"
                         },
                         "kast_stats": {
-                            "both": "85%",
-                            "t": "83%",
-                            "ct": "88%"
-                        },
-                        "adr_stats": { "both": "187", "t": "232", "ct": "118" },
-                        "headshot_stats": {
-                            "both": "23%",
-                            "t": "30%",
-                            "ct": "10%"
-                        },
-                        "fk_stats": { "both": "1", "t": "1", "ct": "0" },
-                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fk_diff_stats": { "both": "0", "t": "+1", "ct": "-1" }
-                    },
-                    {
-                        "name": "heybay",
-                        "team_code": "TTG",
-                        "country": "Hong Kong",
-                        "agent": "Jett",
-                        "r_stats": {
-                            "both": "1.34",
-                            "t": "1.11",
-                            "ct": "1.68"
-                        },
-                        "acs_stats": { "both": "303", "t": "259", "ct": "371" },
-                        "kill_stats": { "both": "24", "t": "13", "ct": "11" },
-                        "death_stats": { "both": "14", "t": "9", "ct": "5" },
-                        "assist_stats": { "both": "2", "t": "1", "ct": "1" },
-                        "kd_diff_stats": {
-                            "both": "+10",
-                            "t": "+4",
-                            "ct": "+6"
-                        },
-                        "kast_stats": {
-                            "both": "85%",
-                            "t": "92%",
-                            "ct": "75%"
-                        },
-                        "adr_stats": { "both": "186", "t": "162", "ct": "221" },
-                        "headshot_stats": {
-                            "both": "13%",
-                            "t": "17%",
-                            "ct": "9%"
-                        },
-                        "fk_stats": { "both": "4", "t": "1", "ct": "3" },
-                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fk_diff_stats": { "both": "+3", "t": "+1", "ct": "+2" }
-                    },
-                    {
-                        "name": "Sylviaovo",
-                        "team_code": "TTG",
-                        "country": "China",
-                        "agent": "Killjoy",
-                        "r_stats": {
-                            "both": "1.27",
-                            "t": "1.23",
-                            "ct": "1.34"
-                        },
-                        "acs_stats": { "both": "253", "t": "221", "ct": "303" },
-                        "kill_stats": { "both": "20", "t": "10", "ct": "10" },
-                        "death_stats": { "both": "14", "t": "7", "ct": "7" },
-                        "assist_stats": { "both": "3", "t": "2", "ct": "1" },
-                        "kd_diff_stats": {
-                            "both": "+6",
-                            "t": "+3",
-                            "ct": "+3"
-                        },
-                        "kast_stats": {
-                            "both": "80%",
-                            "t": "83%",
-                            "ct": "75%"
-                        },
-                        "adr_stats": { "both": "151", "t": "145", "ct": "161" },
-                        "headshot_stats": {
-                            "both": "43%",
-                            "t": "52%",
-                            "ct": "36%"
-                        },
-                        "fk_stats": { "both": "3", "t": "2", "ct": "1" },
-                        "fd_stats": { "both": "2", "t": "2", "ct": "0" },
-                        "fk_diff_stats": { "both": "+1", "t": "0", "ct": "+1" }
-                    },
-                    {
-                        "name": "YOU",
-                        "team_code": "TTG",
-                        "country": "Hong Kong",
-                        "agent": "Sova",
-                        "r_stats": {
-                            "both": "1.19",
-                            "t": "1.30",
-                            "ct": "1.02"
-                        },
-                        "acs_stats": { "both": "152", "t": "195", "ct": "88" },
-                        "kill_stats": { "both": "10", "t": "8", "ct": "2" },
-                        "death_stats": { "both": "8", "t": "5", "ct": "3" },
-                        "assist_stats": { "both": "10", "t": "7", "ct": "3" },
-                        "kd_diff_stats": {
-                            "both": "+2",
-                            "t": "+3",
-                            "ct": "-1"
-                        },
-                        "kast_stats": {
-                            "both": "70%",
+                            "both": "76%",
                             "t": "67%",
-                            "ct": "75%"
+                            "ct": "89%"
                         },
-                        "adr_stats": { "both": "115", "t": "137", "ct": "81" },
+                        "adr_stats": { "both": "184", "t": "214", "ct": "142" },
                         "headshot_stats": {
-                            "both": "32%",
-                            "t": "35%",
+                            "both": "38%",
+                            "t": "38%",
+                            "ct": "38%"
+                        },
+                        "fk_stats": { "both": "4", "t": "3", "ct": "1" },
+                        "fd_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fk_diff_stats": { "both": "+2", "t": "+2", "ct": "0" }
+                    },
+                    {
+                        "name": "Benkai",
+                        "team_code": "PRX",
+                        "country": "Singapore",
+                        "agent": "Cypher",
+                        "r_stats": {
+                            "both": "1.26",
+                            "t": "1.60",
+                            "ct": "0.80"
+                        },
+                        "acs_stats": { "both": "201", "t": "251", "ct": "136" },
+                        "kill_stats": { "both": "16", "t": "12", "ct": "4" },
+                        "death_stats": { "both": "11", "t": "5", "ct": "6" },
+                        "assist_stats": { "both": "2", "t": "0", "ct": "2" },
+                        "kd_diff_stats": {
+                            "both": "+5",
+                            "t": "+7",
+                            "ct": "-2"
+                        },
+                        "kast_stats": {
+                            "both": "62%",
+                            "t": "67%",
+                            "ct": "56%"
+                        },
+                        "adr_stats": { "both": "139", "t": "173", "ct": "93" },
+                        "headshot_stats": {
+                            "both": "38%",
+                            "t": "43%",
                             "ct": "29%"
-                        },
-                        "fk_stats": { "both": "1", "t": "1", "ct": "0" },
-                        "fd_stats": { "both": "1", "t": "1", "ct": "0" },
-                        "fk_diff_stats": { "both": "0", "t": "0", "ct": "0" }
-                    },
-                    {
-                        "name": "cxy0714",
-                        "team_code": "TTG",
-                        "country": "China",
-                        "agent": "Phoenix",
-                        "r_stats": {
-                            "both": "1.03",
-                            "t": "0.82",
-                            "ct": "1.33"
-                        },
-                        "acs_stats": { "both": "150", "t": "120", "ct": "195" },
-                        "kill_stats": { "both": "11", "t": "6", "ct": "5" },
-                        "death_stats": { "both": "10", "t": "7", "ct": "3" },
-                        "assist_stats": { "both": "4", "t": "2", "ct": "2" },
-                        "kd_diff_stats": {
-                            "both": "+1",
-                            "t": "-1",
-                            "ct": "+2"
-                        },
-                        "kast_stats": {
-                            "both": "70%",
-                            "t": "67%",
-                            "ct": "75%"
-                        },
-                        "adr_stats": { "both": "98", "t": "78", "ct": "127" },
-                        "headshot_stats": {
-                            "both": "17%",
-                            "t": "12%",
-                            "ct": "25%"
-                        },
-                        "fk_stats": { "both": "2", "t": "1", "ct": "1" },
-                        "fd_stats": { "both": "4", "t": "3", "ct": "1" },
-                        "fk_diff_stats": { "both": "-2", "t": "-2", "ct": "0" }
-                    }
-                ]
-            }
-        },
-        {
-            "map": { "name": "Split", "duration": "35:36" },
-            "team_left": {
-                "team_overview": {
-                    "name": "Tales of Eastern",
-                    "score": "7",
-                    "t_side_score": "2",
-                    "ct_side_score": "5"
-                },
-                "players": [
-                    {
-                        "name": "Yuk1no",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Astra",
-                        "r_stats": {
-                            "both": "1.07",
-                            "t": "1.15",
-                            "ct": "0.96"
-                        },
-                        "acs_stats": { "both": "275", "t": "328", "ct": "197" },
-                        "kill_stats": { "both": "18", "t": "13", "ct": "5" },
-                        "death_stats": { "both": "16", "t": "10", "ct": "6" },
-                        "assist_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "kd_diff_stats": {
-                            "both": "+2",
-                            "t": "+3",
-                            "ct": "-1"
-                        },
-                        "kast_stats": {
-                            "both": "60%",
-                            "t": "58%",
-                            "ct": "63%"
-                        },
-                        "adr_stats": { "both": "169", "t": "207", "ct": "113" },
-                        "headshot_stats": {
-                            "both": "50%",
-                            "t": "47%",
-                            "ct": "60%"
                         },
                         "fk_stats": { "both": "3", "t": "1", "ct": "2" },
                         "fd_stats": { "both": "0", "t": "0", "ct": "0" },
                         "fk_diff_stats": { "both": "+3", "t": "+1", "ct": "+2" }
                     },
                     {
-                        "name": "whzy",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Jett",
+                        "name": "mindfreak",
+                        "team_code": "PRX",
+                        "country": "Indonesia",
+                        "agent": "Omen",
                         "r_stats": {
-                            "both": "0.86",
-                            "t": "0.26",
-                            "ct": "1.77"
+                            "both": "1.08",
+                            "t": "1.02",
+                            "ct": "1.15"
                         },
-                        "acs_stats": { "both": "275", "t": "123", "ct": "505" },
-                        "kill_stats": { "both": "19", "t": "4", "ct": "15" },
-                        "death_stats": { "both": "17", "t": "12", "ct": "5" },
-                        "assist_stats": { "both": "1", "t": "1", "ct": "0" },
+                        "acs_stats": { "both": "177", "t": "167", "ct": "191" },
+                        "kill_stats": { "both": "14", "t": "7", "ct": "7" },
+                        "death_stats": { "both": "12", "t": "6", "ct": "6" },
+                        "assist_stats": { "both": "6", "t": "4", "ct": "2" },
                         "kd_diff_stats": {
                             "both": "+2",
-                            "t": "-8",
-                            "ct": "+10"
-                        },
-                        "kast_stats": {
-                            "both": "55%",
-                            "t": "42%",
-                            "ct": "75%"
-                        },
-                        "adr_stats": { "both": "145", "t": "76", "ct": "249" },
-                        "headshot_stats": {
-                            "both": "28%",
-                            "t": "21%",
-                            "ct": "31%"
-                        },
-                        "fk_stats": { "both": "4", "t": "1", "ct": "3" },
-                        "fd_stats": { "both": "6", "t": "5", "ct": "1" },
-                        "fk_diff_stats": { "both": "-2", "t": "-4", "ct": "+2" }
-                    },
-                    {
-                        "name": "GugeDD",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Raze",
-                        "r_stats": {
-                            "both": "0.76",
-                            "t": "0.49",
-                            "ct": "1.16"
-                        },
-                        "acs_stats": { "both": "182", "t": "153", "ct": "227" },
-                        "kill_stats": { "both": "11", "t": "5", "ct": "6" },
-                        "death_stats": { "both": "17", "t": "12", "ct": "5" },
-                        "assist_stats": { "both": "3", "t": "2", "ct": "1" },
-                        "kd_diff_stats": {
-                            "both": "-6",
-                            "t": "-7",
+                            "t": "+1",
                             "ct": "+1"
                         },
                         "kast_stats": {
-                            "both": "70%",
-                            "t": "67%",
-                            "ct": "75%"
+                            "both": "71%",
+                            "t": "75%",
+                            "ct": "67%"
                         },
-                        "adr_stats": { "both": "107", "t": "107", "ct": "107" },
+                        "adr_stats": { "both": "109", "t": "97", "ct": "126" },
                         "headshot_stats": {
-                            "both": "13%",
-                            "t": "12%",
-                            "ct": "16%"
+                            "both": "31%",
+                            "t": "43%",
+                            "ct": "22%"
                         },
-                        "fk_stats": { "both": "3", "t": "2", "ct": "1" },
-                        "fd_stats": { "both": "1", "t": "1", "ct": "0" },
-                        "fk_diff_stats": { "both": "+2", "t": "+1", "ct": "+1" }
+                        "fk_stats": { "both": "2", "t": "2", "ct": "0" },
+                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fk_diff_stats": { "both": "+1", "t": "+2", "ct": "-1" }
                     },
                     {
-                        "name": "cBr",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Breach",
+                        "name": "Jinggg",
+                        "team_code": "PRX",
+                        "country": "Singapore",
+                        "agent": "Reyna",
                         "r_stats": {
-                            "both": "0.70",
-                            "t": "0.66",
-                            "ct": "0.77"
+                            "both": "0.90",
+                            "t": "0.90",
+                            "ct": "0.91"
                         },
-                        "acs_stats": { "both": "141", "t": "113", "ct": "184" },
-                        "kill_stats": { "both": "9", "t": "4", "ct": "5" },
+                        "acs_stats": { "both": "222", "t": "206", "ct": "243" },
+                        "kill_stats": { "both": "15", "t": "8", "ct": "7" },
                         "death_stats": { "both": "17", "t": "10", "ct": "7" },
-                        "assist_stats": { "both": "5", "t": "2", "ct": "3" },
-                        "kd_diff_stats": {
-                            "both": "-8",
-                            "t": "-6",
-                            "ct": "-2"
-                        },
+                        "assist_stats": { "both": "7", "t": "5", "ct": "2" },
+                        "kd_diff_stats": { "both": "-2", "t": "-2", "ct": "0" },
                         "kast_stats": {
-                            "both": "45%",
-                            "t": "42%",
-                            "ct": "50%"
+                            "both": "76%",
+                            "t": "75%",
+                            "ct": "78%"
                         },
-                        "adr_stats": { "both": "96", "t": "80", "ct": "120" },
+                        "adr_stats": { "both": "141", "t": "136", "ct": "147" },
                         "headshot_stats": {
-                            "both": "26%",
-                            "t": "24%",
-                            "ct": "29%"
+                            "both": "24%",
+                            "t": "23%",
+                            "ct": "26%"
                         },
-                        "fk_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fd_stats": { "both": "0", "t": "0", "ct": "0" },
-                        "fk_diff_stats": { "both": "+1", "t": "0", "ct": "+1" }
+                        "fk_stats": { "both": "4", "t": "2", "ct": "2" },
+                        "fd_stats": { "both": "4", "t": "2", "ct": "2" },
+                        "fk_diff_stats": { "both": "0", "t": "0", "ct": "0" }
                     },
                     {
-                        "name": "K1te",
-                        "team_code": "Toe",
-                        "country": "China",
-                        "agent": "Kayo",
+                        "name": "d4v41",
+                        "team_code": "PRX",
+                        "country": "Malaysia",
+                        "agent": "Sova",
                         "r_stats": {
-                            "both": "0.48",
-                            "t": "0.32",
-                            "ct": "0.73"
+                            "both": "0.78",
+                            "t": "0.43",
+                            "ct": "1.23"
                         },
-                        "acs_stats": { "both": "80", "t": "79", "ct": "81" },
-                        "kill_stats": { "both": "5", "t": "3", "ct": "2" },
-                        "death_stats": { "both": "16", "t": "11", "ct": "5" },
-                        "assist_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "acs_stats": { "both": "123", "t": "70", "ct": "196" },
+                        "kill_stats": { "both": "9", "t": "2", "ct": "7" },
+                        "death_stats": { "both": "13", "t": "9", "ct": "4" },
+                        "assist_stats": { "both": "4", "t": "3", "ct": "1" },
                         "kd_diff_stats": {
-                            "both": "-11",
-                            "t": "-8",
-                            "ct": "-3"
+                            "both": "-4",
+                            "t": "-7",
+                            "ct": "+3"
                         },
                         "kast_stats": {
-                            "both": "40%",
-                            "t": "33%",
-                            "ct": "50%"
+                            "both": "62%",
+                            "t": "58%",
+                            "ct": "67%"
                         },
-                        "adr_stats": { "both": "53", "t": "50", "ct": "56" },
+                        "adr_stats": { "both": "79", "t": "51", "ct": "116" },
                         "headshot_stats": {
-                            "both": "12%",
-                            "t": "30%",
-                            "ct": "0%"
+                            "both": "18%",
+                            "t": "18%",
+                            "ct": "18%"
                         },
                         "fk_stats": { "both": "0", "t": "0", "ct": "0" },
-                        "fd_stats": { "both": "2", "t": "2", "ct": "0" },
-                        "fk_diff_stats": { "both": "-2", "t": "-2", "ct": "0" }
+                        "fd_stats": { "both": "1", "t": "1", "ct": "0" },
+                        "fk_diff_stats": { "both": "-1", "t": "-1", "ct": "0" }
                     }
                 ]
             },
             "team_right": {
                 "team_overview": {
-                    "name": "Totoro Gaming",
-                    "score": "13",
-                    "t_side_score": "3",
-                    "ct_side_score": "10"
+                    "name": "ORDER",
+                    "score": "8",
+                    "t_side_score": "4",
+                    "ct_side_score": "4"
                 },
                 "players": [
                     {
-                        "name": "heybay",
-                        "team_code": "TTG",
-                        "country": "Hong Kong",
-                        "agent": "Jett",
+                        "name": "disk0",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Breach",
                         "r_stats": {
-                            "both": "1.42",
-                            "t": "0.47",
-                            "ct": "2.05"
+                            "both": "1.15",
+                            "t": "1.42",
+                            "ct": "0.95"
                         },
-                        "acs_stats": { "both": "290", "t": "167", "ct": "374" },
-                        "kill_stats": { "both": "23", "t": "5", "ct": "18" },
-                        "death_stats": { "both": "10", "t": "7", "ct": "3" },
-                        "assist_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "acs_stats": { "both": "219", "t": "306", "ct": "155" },
+                        "kill_stats": { "both": "16", "t": "9", "ct": "7" },
+                        "death_stats": { "both": "14", "t": "6", "ct": "8" },
+                        "assist_stats": { "both": "9", "t": "6", "ct": "3" },
                         "kd_diff_stats": {
-                            "both": "+13",
-                            "t": "-2",
-                            "ct": "+15"
+                            "both": "+2",
+                            "t": "+3",
+                            "ct": "-1"
                         },
                         "kast_stats": {
-                            "both": "80%",
-                            "t": "63%",
-                            "ct": "92%"
+                            "both": "86%",
+                            "t": "89%",
+                            "ct": "83%"
                         },
-                        "adr_stats": { "both": "190", "t": "92", "ct": "256" },
+                        "adr_stats": { "both": "123", "t": "164", "ct": "91" },
                         "headshot_stats": {
-                            "both": "27%",
-                            "t": "30%",
-                            "ct": "26%"
+                            "both": "24%",
+                            "t": "28%",
+                            "ct": "20%"
                         },
-                        "fk_stats": { "both": "2", "t": "0", "ct": "2" },
-                        "fd_stats": { "both": "4", "t": "3", "ct": "1" },
-                        "fk_diff_stats": { "both": "-2", "t": "-3", "ct": "+1" }
+                        "fk_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fd_stats": { "both": "2", "t": "0", "ct": "2" },
+                        "fk_diff_stats": { "both": "0", "t": "+1", "ct": "-1" }
                     },
                     {
-                        "name": "YOU",
-                        "team_code": "TTG",
-                        "country": "Hong Kong",
-                        "agent": "Cypher",
+                        "name": "Maple",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Skye",
                         "r_stats": {
-                            "both": "1.23",
-                            "t": "0.91",
-                            "ct": "1.44"
+                            "both": "1.06",
+                            "t": "1.29",
+                            "ct": "0.88"
                         },
-                        "acs_stats": { "both": "198", "t": "235", "ct": "174" },
-                        "kill_stats": { "both": "13", "t": "5", "ct": "8" },
-                        "death_stats": { "both": "10", "t": "7", "ct": "3" },
-                        "assist_stats": { "both": "5", "t": "3", "ct": "2" },
+                        "acs_stats": { "both": "216", "t": "263", "ct": "181" },
+                        "kill_stats": { "both": "13", "t": "9", "ct": "4" },
+                        "death_stats": { "both": "15", "t": "6", "ct": "9" },
+                        "assist_stats": { "both": "9", "t": "1", "ct": "8" },
+                        "kd_diff_stats": {
+                            "both": "-2",
+                            "t": "+3",
+                            "ct": "-5"
+                        },
+                        "kast_stats": {
+                            "both": "67%",
+                            "t": "67%",
+                            "ct": "67%"
+                        },
+                        "adr_stats": { "both": "155", "t": "185", "ct": "133" },
+                        "headshot_stats": {
+                            "both": "17%",
+                            "t": "18%",
+                            "ct": "17%"
+                        },
+                        "fk_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fd_stats": { "both": "1", "t": "1", "ct": "0" },
+                        "fk_diff_stats": { "both": "0", "t": "-1", "ct": "+1" }
+                    },
+                    {
+                        "name": "WRONSKI",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Jett",
+                        "r_stats": {
+                            "both": "1.01",
+                            "t": "0.68",
+                            "ct": "1.25"
+                        },
+                        "acs_stats": { "both": "235", "t": "176", "ct": "280" },
+                        "kill_stats": { "both": "19", "t": "6", "ct": "13" },
+                        "death_stats": { "both": "16", "t": "8", "ct": "8" },
+                        "assist_stats": { "both": "2", "t": "0", "ct": "2" },
                         "kd_diff_stats": {
                             "both": "+3",
                             "t": "-2",
                             "ct": "+5"
                         },
                         "kast_stats": {
-                            "both": "65%",
-                            "t": "50%",
-                            "ct": "75%"
+                            "both": "52%",
+                            "t": "44%",
+                            "ct": "58%"
                         },
-                        "adr_stats": { "both": "132", "t": "150", "ct": "119" },
+                        "adr_stats": { "both": "143", "t": "127", "ct": "156" },
                         "headshot_stats": {
-                            "both": "25%",
-                            "t": "29%",
-                            "ct": "22%"
-                        },
-                        "fk_stats": { "both": "2", "t": "0", "ct": "2" },
-                        "fd_stats": { "both": "1", "t": "1", "ct": "0" },
-                        "fk_diff_stats": { "both": "+1", "t": "-1", "ct": "+2" }
-                    },
-                    {
-                        "name": "Sylviaovo",
-                        "team_code": "TTG",
-                        "country": "China",
-                        "agent": "Breach",
-                        "r_stats": {
-                            "both": "1.13",
-                            "t": "0.70",
-                            "ct": "1.43"
-                        },
-                        "acs_stats": { "both": "221", "t": "126", "ct": "285" },
-                        "kill_stats": { "both": "18", "t": "4", "ct": "14" },
-                        "death_stats": { "both": "14", "t": "6", "ct": "8" },
-                        "assist_stats": { "both": "7", "t": "3", "ct": "4" },
-                        "kd_diff_stats": {
-                            "both": "+4",
-                            "t": "-2",
-                            "ct": "+6"
-                        },
-                        "kast_stats": {
-                            "both": "80%",
+                            "both": "35%",
                             "t": "50%",
-                            "ct": "100%"
-                        },
-                        "adr_stats": { "both": "126", "t": "51", "ct": "177" },
-                        "headshot_stats": {
-                            "both": "43%",
-                            "t": "50%",
-                            "ct": "42%"
-                        },
-                        "fk_stats": { "both": "0", "t": "0", "ct": "0" },
-                        "fd_stats": { "both": "0", "t": "0", "ct": "0" },
-                        "fk_diff_stats": { "both": "0", "t": "0", "ct": "0" }
-                    },
-                    {
-                        "name": "cxy0714",
-                        "team_code": "TTG",
-                        "country": "China",
-                        "agent": "Sage",
-                        "r_stats": {
-                            "both": "1.06",
-                            "t": "0.92",
-                            "ct": "1.15"
-                        },
-                        "acs_stats": { "both": "212", "t": "239", "ct": "195" },
-                        "kill_stats": { "both": "14", "t": "6", "ct": "8" },
-                        "death_stats": { "both": "12", "t": "6", "ct": "6" },
-                        "assist_stats": { "both": "4", "t": "3", "ct": "1" },
-                        "kd_diff_stats": { "both": "+2", "t": "0", "ct": "+2" },
-                        "kast_stats": {
-                            "both": "75%",
-                            "t": "75%",
-                            "ct": "75%"
-                        },
-                        "adr_stats": { "both": "133", "t": "148", "ct": "124" },
-                        "headshot_stats": {
-                            "both": "33%",
-                            "t": "38%",
                             "ct": "29%"
                         },
-                        "fk_stats": { "both": "2", "t": "0", "ct": "2" },
-                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
-                        "fk_diff_stats": { "both": "+1", "t": "0", "ct": "+1" }
+                        "fk_stats": { "both": "3", "t": "2", "ct": "1" },
+                        "fd_stats": { "both": "4", "t": "1", "ct": "3" },
+                        "fk_diff_stats": { "both": "-1", "t": "+1", "ct": "-2" }
                     },
                     {
-                        "name": "Midnight",
-                        "team_code": "TTG",
-                        "country": "China",
+                        "name": "Texta",
+                        "team_code": "ORD",
+                        "country": "Australia",
                         "agent": "Omen",
                         "r_stats": {
-                            "both": "0.92",
-                            "t": "1.06",
-                            "ct": "0.83"
+                            "both": "0.76",
+                            "t": "0.96",
+                            "ct": "0.60"
                         },
-                        "acs_stats": { "both": "220", "t": "293", "ct": "172" },
-                        "kill_stats": { "both": "15", "t": "8", "ct": "7" },
-                        "death_stats": { "both": "16", "t": "7", "ct": "9" },
-                        "assist_stats": { "both": "6", "t": "0", "ct": "6" },
+                        "acs_stats": { "both": "141", "t": "154", "ct": "132" },
+                        "kill_stats": { "both": "8", "t": "4", "ct": "4" },
+                        "death_stats": { "both": "14", "t": "5", "ct": "9" },
+                        "assist_stats": { "both": "6", "t": "2", "ct": "4" },
                         "kd_diff_stats": {
-                            "both": "-1",
-                            "t": "+1",
-                            "ct": "-2"
+                            "both": "-6",
+                            "t": "-1",
+                            "ct": "-5"
                         },
                         "kast_stats": {
-                            "both": "70%",
-                            "t": "50%",
+                            "both": "67%",
+                            "t": "67%",
+                            "ct": "67%"
+                        },
+                        "adr_stats": { "both": "92", "t": "89", "ct": "95" },
+                        "headshot_stats": {
+                            "both": "29%",
+                            "t": "31%",
+                            "ct": "28%"
+                        },
+                        "fk_stats": { "both": "1", "t": "1", "ct": "0" },
+                        "fd_stats": { "both": "4", "t": "2", "ct": "2" },
+                        "fk_diff_stats": { "both": "-3", "t": "-1", "ct": "-2" }
+                    },
+                    {
+                        "name": "rDeeW",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Chamber",
+                        "r_stats": {
+                            "both": "0.58",
+                            "t": "0.35",
+                            "ct": "0.75"
+                        },
+                        "acs_stats": { "both": "147", "t": "37", "ct": "230" },
+                        "kill_stats": { "both": "10", "t": "0", "ct": "10" },
+                        "death_stats": { "both": "17", "t": "7", "ct": "10" },
+                        "assist_stats": { "both": "3", "t": "2", "ct": "1" },
+                        "kd_diff_stats": { "both": "-7", "t": "-7", "ct": "0" },
+                        "kast_stats": {
+                            "both": "71%",
+                            "t": "56%",
                             "ct": "83%"
                         },
-                        "adr_stats": { "both": "124", "t": "133", "ct": "119" },
+                        "adr_stats": { "both": "98", "t": "37", "ct": "144" },
                         "headshot_stats": {
-                            "both": "37%",
-                            "t": "33%",
-                            "ct": "38%"
+                            "both": "26%",
+                            "t": "13%",
+                            "ct": "33%"
                         },
-                        "fk_stats": { "both": "3", "t": "1", "ct": "2" },
-                        "fd_stats": { "both": "5", "t": "3", "ct": "2" },
+                        "fk_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fd_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fk_diff_stats": { "both": "-1", "t": "-1", "ct": "0" }
+                    }
+                ]
+            }
+        },
+        {
+            "map": {
+                "name": "Bind\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tPICK",
+                "duration": "39:33"
+            },
+            "team_left": {
+                "team_overview": {
+                    "name": "Paper Rex",
+                    "score": "13",
+                    "t_side_score": "8",
+                    "ct_side_score": "5"
+                },
+                "players": [
+                    {
+                        "name": "f0rsakeN",
+                        "team_code": "PRX",
+                        "country": "Indonesia",
+                        "agent": "Chamber",
+                        "r_stats": {
+                            "both": "1.36",
+                            "t": "0.90",
+                            "ct": "2.14"
+                        },
+                        "acs_stats": { "both": "324", "t": "246", "ct": "460" },
+                        "kill_stats": { "both": "22", "t": "10", "ct": "12" },
+                        "death_stats": { "both": "13", "t": "9", "ct": "4" },
+                        "assist_stats": { "both": "2", "t": "2", "ct": "0" },
+                        "kd_diff_stats": {
+                            "both": "+9",
+                            "t": "+1",
+                            "ct": "+8"
+                        },
+                        "kast_stats": {
+                            "both": "74%",
+                            "t": "67%",
+                            "ct": "86%"
+                        },
+                        "adr_stats": { "both": "221", "t": "170", "ct": "310" },
+                        "headshot_stats": {
+                            "both": "42%",
+                            "t": "46%",
+                            "ct": "36%"
+                        },
+                        "fk_stats": { "both": "5", "t": "1", "ct": "4" },
+                        "fd_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fk_diff_stats": { "both": "+3", "t": "0", "ct": "+3" }
+                    },
+                    {
+                        "name": "Jinggg",
+                        "team_code": "PRX",
+                        "country": "Singapore",
+                        "agent": "Raze",
+                        "r_stats": {
+                            "both": "1.30",
+                            "t": "1.37",
+                            "ct": "1.17"
+                        },
+                        "acs_stats": { "both": "306", "t": "312", "ct": "295" },
+                        "kill_stats": { "both": "21", "t": "13", "ct": "8" },
+                        "death_stats": { "both": "14", "t": "8", "ct": "6" },
+                        "assist_stats": { "both": "4", "t": "4", "ct": "0" },
+                        "kd_diff_stats": {
+                            "both": "+7",
+                            "t": "+5",
+                            "ct": "+2"
+                        },
+                        "kast_stats": {
+                            "both": "74%",
+                            "t": "67%",
+                            "ct": "86%"
+                        },
+                        "adr_stats": { "both": "200", "t": "186", "ct": "224" },
+                        "headshot_stats": {
+                            "both": "22%",
+                            "t": "20%",
+                            "ct": "25%"
+                        },
+                        "fk_stats": { "both": "2", "t": "2", "ct": "0" },
+                        "fd_stats": { "both": "4", "t": "4", "ct": "0" },
                         "fk_diff_stats": { "both": "-2", "t": "-2", "ct": "0" }
+                    },
+                    {
+                        "name": "mindfreak",
+                        "team_code": "PRX",
+                        "country": "Indonesia",
+                        "agent": "Brimstone",
+                        "r_stats": {
+                            "both": "1.28",
+                            "t": "1.37",
+                            "ct": "1.13"
+                        },
+                        "acs_stats": { "both": "252", "t": "310", "ct": "155" },
+                        "kill_stats": { "both": "17", "t": "13", "ct": "4" },
+                        "death_stats": { "both": "12", "t": "9", "ct": "3" },
+                        "assist_stats": { "both": "8", "t": "7", "ct": "1" },
+                        "kd_diff_stats": {
+                            "both": "+5",
+                            "t": "+4",
+                            "ct": "+1"
+                        },
+                        "kast_stats": {
+                            "both": "95%",
+                            "t": "100%",
+                            "ct": "86%"
+                        },
+                        "adr_stats": { "both": "152", "t": "181", "ct": "103" },
+                        "headshot_stats": {
+                            "both": "36%",
+                            "t": "29%",
+                            "ct": "63%"
+                        },
+                        "fk_stats": { "both": "1", "t": "1", "ct": "0" },
+                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fk_diff_stats": { "both": "0", "t": "+1", "ct": "-1" }
+                    },
+                    {
+                        "name": "d4v41",
+                        "team_code": "PRX",
+                        "country": "Malaysia",
+                        "agent": "Fade",
+                        "r_stats": {
+                            "both": "1.12",
+                            "t": "1.19",
+                            "ct": "0.99"
+                        },
+                        "acs_stats": { "both": "165", "t": "182", "ct": "138" },
+                        "kill_stats": { "both": "11", "t": "8", "ct": "3" },
+                        "death_stats": { "both": "11", "t": "7", "ct": "4" },
+                        "assist_stats": { "both": "7", "t": "4", "ct": "3" },
+                        "kd_diff_stats": { "both": "0", "t": "+1", "ct": "-1" },
+                        "kast_stats": {
+                            "both": "79%",
+                            "t": "83%",
+                            "ct": "71%"
+                        },
+                        "adr_stats": { "both": "116", "t": "115", "ct": "117" },
+                        "headshot_stats": {
+                            "both": "22%",
+                            "t": "26%",
+                            "ct": "18%"
+                        },
+                        "fk_stats": { "both": "2", "t": "2", "ct": "0" },
+                        "fd_stats": { "both": "0", "t": "0", "ct": "0" },
+                        "fk_diff_stats": { "both": "+2", "t": "+2", "ct": "0" }
+                    },
+                    {
+                        "name": "Benkai",
+                        "team_code": "PRX",
+                        "country": "Singapore",
+                        "agent": "Viper",
+                        "r_stats": {
+                            "both": "0.92",
+                            "t": "0.87",
+                            "ct": "1.00"
+                        },
+                        "acs_stats": { "both": "159", "t": "171", "ct": "140" },
+                        "kill_stats": { "both": "11", "t": "8", "ct": "3" },
+                        "death_stats": { "both": "12", "t": "8", "ct": "4" },
+                        "assist_stats": { "both": "4", "t": "1", "ct": "3" },
+                        "kd_diff_stats": { "both": "-1", "t": "0", "ct": "-1" },
+                        "kast_stats": {
+                            "both": "63%",
+                            "t": "58%",
+                            "ct": "71%"
+                        },
+                        "adr_stats": { "both": "102", "t": "110", "ct": "90" },
+                        "headshot_stats": {
+                            "both": "25%",
+                            "t": "35%",
+                            "ct": "8%"
+                        },
+                        "fk_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fd_stats": { "both": "0", "t": "0", "ct": "0" },
+                        "fk_diff_stats": { "both": "+2", "t": "+1", "ct": "+1" }
+                    }
+                ]
+            },
+            "team_right": {
+                "team_overview": {
+                    "name": "ORDER",
+                    "score": "6",
+                    "t_side_score": "2",
+                    "ct_side_score": "4"
+                },
+                "players": [
+                    {
+                        "name": "rDeeW",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Chamber",
+                        "r_stats": {
+                            "both": "1.03",
+                            "t": "1.37",
+                            "ct": "0.83"
+                        },
+                        "acs_stats": { "both": "231", "t": "333", "ct": "173" },
+                        "kill_stats": { "both": "17", "t": "9", "ct": "8" },
+                        "death_stats": { "both": "14", "t": "5", "ct": "9" },
+                        "assist_stats": { "both": "3", "t": "0", "ct": "3" },
+                        "kd_diff_stats": {
+                            "both": "+3",
+                            "t": "+4",
+                            "ct": "-1"
+                        },
+                        "kast_stats": {
+                            "both": "68%",
+                            "t": "57%",
+                            "ct": "75%"
+                        },
+                        "adr_stats": { "both": "149", "t": "198", "ct": "121" },
+                        "headshot_stats": {
+                            "both": "24%",
+                            "t": "16%",
+                            "ct": "33%"
+                        },
+                        "fk_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fk_diff_stats": { "both": "+1", "t": "+1", "ct": "0" }
+                    },
+                    {
+                        "name": "Maple",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Fade",
+                        "r_stats": {
+                            "both": "0.89",
+                            "t": "0.62",
+                            "ct": "1.04"
+                        },
+                        "acs_stats": { "both": "186", "t": "136", "ct": "216" },
+                        "kill_stats": { "both": "13", "t": "3", "ct": "10" },
+                        "death_stats": { "both": "15", "t": "7", "ct": "8" },
+                        "assist_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "kd_diff_stats": {
+                            "both": "-2",
+                            "t": "-4",
+                            "ct": "+2"
+                        },
+                        "kast_stats": {
+                            "both": "68%",
+                            "t": "57%",
+                            "ct": "75%"
+                        },
+                        "adr_stats": { "both": "121", "t": "105", "ct": "131" },
+                        "headshot_stats": {
+                            "both": "29%",
+                            "t": "19%",
+                            "ct": "37%"
+                        },
+                        "fk_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fd_stats": { "both": "2", "t": "1", "ct": "1" },
+                        "fk_diff_stats": { "both": "-1", "t": "-1", "ct": "0" }
+                    },
+                    {
+                        "name": "Texta",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Brimstone",
+                        "r_stats": {
+                            "both": "0.79",
+                            "t": "0.89",
+                            "ct": "0.74"
+                        },
+                        "acs_stats": { "both": "225", "t": "263", "ct": "203" },
+                        "kill_stats": { "both": "13", "t": "7", "ct": "6" },
+                        "death_stats": { "both": "18", "t": "6", "ct": "12" },
+                        "assist_stats": { "both": "7", "t": "0", "ct": "7" },
+                        "kd_diff_stats": {
+                            "both": "-5",
+                            "t": "+1",
+                            "ct": "-6"
+                        },
+                        "kast_stats": {
+                            "both": "74%",
+                            "t": "57%",
+                            "ct": "83%"
+                        },
+                        "adr_stats": { "both": "159", "t": "173", "ct": "151" },
+                        "headshot_stats": {
+                            "both": "35%",
+                            "t": "58%",
+                            "ct": "25%"
+                        },
+                        "fk_stats": { "both": "1", "t": "1", "ct": "0" },
+                        "fd_stats": { "both": "0", "t": "0", "ct": "0" },
+                        "fk_diff_stats": { "both": "+1", "t": "+1", "ct": "0" }
+                    },
+                    {
+                        "name": "WRONSKI",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Raze",
+                        "r_stats": {
+                            "both": "0.58",
+                            "t": "0.02",
+                            "ct": "1.02"
+                        },
+                        "acs_stats": { "both": "193", "t": "4", "ct": "304" },
+                        "kill_stats": { "both": "12", "t": "0", "ct": "12" },
+                        "death_stats": { "both": "18", "t": "7", "ct": "11" },
+                        "assist_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "kd_diff_stats": {
+                            "both": "-6",
+                            "t": "-7",
+                            "ct": "+1"
+                        },
+                        "kast_stats": { "both": "32%", "t": "0%", "ct": "50%" },
+                        "adr_stats": { "both": "120", "t": "4", "ct": "187" },
+                        "headshot_stats": {
+                            "both": "29%",
+                            "t": "0%",
+                            "ct": "30%"
+                        },
+                        "fk_stats": { "both": "3", "t": "0", "ct": "3" },
+                        "fd_stats": { "both": "8", "t": "4", "ct": "4" },
+                        "fk_diff_stats": { "both": "-5", "t": "-4", "ct": "-1" }
+                    },
+                    {
+                        "name": "disk0",
+                        "team_code": "ORD",
+                        "country": "Australia",
+                        "agent": "Skye",
+                        "r_stats": {
+                            "both": "0.49",
+                            "t": "0.49",
+                            "ct": "0.49"
+                        },
+                        "acs_stats": { "both": "120", "t": "96", "ct": "134" },
+                        "kill_stats": { "both": "7", "t": "2", "ct": "5" },
+                        "death_stats": { "both": "17", "t": "6", "ct": "11" },
+                        "assist_stats": { "both": "3", "t": "2", "ct": "1" },
+                        "kd_diff_stats": {
+                            "both": "-10",
+                            "t": "-4",
+                            "ct": "-6"
+                        },
+                        "kast_stats": {
+                            "both": "47%",
+                            "t": "57%",
+                            "ct": "42%"
+                        },
+                        "adr_stats": { "both": "83", "t": "64", "ct": "94" },
+                        "headshot_stats": {
+                            "both": "30%",
+                            "t": "27%",
+                            "ct": "32%"
+                        },
+                        "fk_stats": { "both": "0", "t": "0", "ct": "0" },
+                        "fd_stats": { "both": "1", "t": "0", "ct": "1" },
+                        "fk_diff_stats": { "both": "-1", "t": "0", "ct": "-1" }
                     }
                 ]
             }
         }
     ],
-    "url": "https://www.vlr.gg/29852/tales-of-eastern-vs-totoro-gaming-energy-vision-playoffs-ubsf"
+    "url": "https://www.vlr.gg/106455/paper-rex-vs-order-champions-tour-asia-pacific-stage-2-challengers-playoffs-winners-c"
 }

@@ -364,25 +364,24 @@ with open('./data/scraped_urls.log', 'a+') as log_file:
 urls_to_scrape = list(urls - scraped_urls)
 
 data = []
+for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
+    scraped_data = scrape_match(url)
+    if scraped_data is None:
+        continue
 
-with open('./data/scraped_urls.log', 'a') as log_file:
+    data.append(scraped_data)
 
-    for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
-        scraped_data = scrape_match(url)
-        if scraped_data is None:
-            continue
+    # Save the data and log the URL every 100 URLs
+    if i % 100 == 0 and i > 0:
+        with open('./data/scraped_data.json', 'a') as data_file:
+            for item in data:
+                json.dump(item, data_file)
+                data_file.write('\n')
+            data = []
 
-        data.append(scraped_data)
-        log_file.write(url + '\n')
-
-        # Save the data every 100 URLs
-        if i % 100 == 0 and i > 0:
-            with open('scraped_data.json', 'a') as data_file:
-                for item in data:
-                    json.dump(item, data_file)
-                    data_file.write('\n')
-                data = []
-        time.sleep(0.5)
+        with open('./data/scraped_urls.log', 'a') as log_file:
+            log_file.write(url + '\n')
+    time.sleep(0.5)
 
     if data:
         with open('./data/scraped_data.json', 'a') as data_file:

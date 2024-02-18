@@ -21,6 +21,8 @@ The script will save data to `scraped_data.json` at intervals of 100 matches and
 
 **Note:** The stats are saved for each player for each map (including stats for their performance in each half `t` and `ct`), but each player's combined stats for all maps are not saved, and they can be calculated from the individual maps. This was done to save space and make the data more readable.
 
+Also, the data is not 100% clean, there may be some `\t` and `\n` characters in the data, but those are easily removed with some basic string manipulation once you load the data into a dataframe or similar.
+
 ## Contributing
 
 If you want to contribute to the project, feel free to open an issue or a pull request. If you have any questions or comments, you can contact me at [my email](mailto:taavidev@gmail.com).
