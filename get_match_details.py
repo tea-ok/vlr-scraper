@@ -329,9 +329,9 @@ def scrape_match(url: str) -> dict:
     date_time_div = match_header_date_div.find('div', class_='moment-tz-convert') if match_header_date_div else None
     date_time = date_time_div.get('data-utc-ts').strip() if date_time_div else None
     if date_time:
-        date, time = date_time.split(' ')
+        date, match_time = date_time.split(' ')
     else:
-        date = time = None
+        date = match_time = None
 
     # Map-specific details
     stats_container_div = soup.find('div', class_='vm-stats-container')
@@ -348,7 +348,7 @@ def scrape_match(url: str) -> dict:
         'stage': stage,
         'match_type': match_type,
         'date': date,
-        'time': time,
+        'time': match_time,
         'games': game_data,
         'url': url
     }
@@ -362,7 +362,6 @@ with open('./data/scraped_urls.log', 'a+') as log_file:
 
 # Get the URLs that haven't been scraped yet
 urls_to_scrape = list(urls - scraped_urls)
-urls_to_scrape = urls_to_scrape[:len(urls_to_scrape) // 2]
 
 data = []
 url_log = []
