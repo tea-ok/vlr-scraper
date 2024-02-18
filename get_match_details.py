@@ -367,7 +367,7 @@ data = []
 
 with open('./data/scraped_urls.log', 'a') as log_file:
 
-    for i, url in enumerate(tqdm(urls_to_scrape[:5], desc='Scraping matches')):
+    for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
         scraped_data = scrape_match(url)
         if scraped_data is None:
             continue
