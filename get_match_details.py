@@ -12,7 +12,7 @@ import time
 load_dotenv()
 http = os.getenv('HTTP')
 https = os.getenv('HTTPS')
-opener = opener = urllib.request.build_opener(
+opener = urllib.request.build_opener(
     urllib.request.ProxyHandler(
         {
             'http': http,
@@ -326,9 +326,12 @@ def scrape_match(url: str) -> dict:
     match_type = match_type_divs[1].text.strip() if len(match_type_divs) > 1 else None
 
     match_header_date_div = soup.find('div', class_='match-header-date')
-    date_time_div = match_header_date_div.find_all('div', class_='moment-tz-convert') if match_header_date_div else None
-    date = date_time_div[0].text.strip() if len(date_time_div) > 0 else None
-    time = date_time_div[1].text.strip() if len(date_time_div) > 1 else None
+    date_time_div = match_header_date_div.find('div', class_='moment-tz-convert') if match_header_date_div else None
+    date_time = date_time_div.get('data-utc-ts').strip() if date_time_div else None
+    if date_time:
+        date, time = date_time.split(' ')
+    else:
+        date = time = None
 
     # Map-specific details
     stats_container_div = soup.find('div', class_='vm-stats-container')

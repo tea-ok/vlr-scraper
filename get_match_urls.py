@@ -1,13 +1,29 @@
-import requests
+from dotenv import load_dotenv
+import urllib.request
 from bs4 import BeautifulSoup
 from typing import Optional
 import time
 from tqdm import tqdm
 import json
+import os
+
+# Load proxy config
+load_dotenv()
+http = os.getenv('HTTP')
+https = os.getenv('HTTPS')
+opener = urllib.request.build_opener(
+    urllib.request.ProxyHandler(
+        {
+            'http': http,
+            'https': https
+        }
+    )
+)
 
 def get_last_page(url: str) -> Optional[int]:
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    response = opener.open(url)
+    content = response.read()
+    soup = BeautifulSoup(content, 'html.parser')
 
     action_container = soup.find('div', class_='action-container')
     if action_container:
@@ -19,8 +35,9 @@ def get_last_page(url: str) -> Optional[int]:
     return None
 
 def req(url: str) -> list[str]:
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    response = opener.open(url)
+    content = response.read()
+    soup = BeautifulSoup(content, 'html.parser')
 
     # Finding URLs for all matches
     cards = soup.find_all('div', class_='wf-card')
@@ -42,7 +59,7 @@ if not last_page:
 else:
     for page in tqdm(range(1, last_page), desc="Scraping pages"):
         match_urls += req(f'https://www.vlr.gg/matches/results?page={page}')
-        time.sleep(2)
+        time.sleep(0.5)
 
     with open('./data/match_urls.json', 'w') as f:
         json.dump(match_urls, f)

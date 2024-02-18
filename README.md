@@ -9,9 +9,9 @@ To use the scripts, first install the required packages with `pip install -r req
 1. `python get_match_urls.py`
 2. `python get_match_details.py`
 
-**Note**: `get_match_details.py` uses a proxy API. If you want to use it, you need to get one (for example, [BrightData](https://brightdata.com)), follow the instructions to get your proxy credentials, and set the `HTTP` and `HTTPS` environment variables in an `.env` file in the root directory of the project. The `.env` file should look like the example file `.env.example`.
+**Note**: The scripts are configured to use a proxy API. If you want to use it, you need to get one (for example, [BrightData](https://brightdata.com)), follow the instructions to get your proxy credentials, and set the `HTTP` and `HTTPS` environment variables in an `.env` file in the root directory of the project. The `.env` file should look like the example file `.env.example`.
 
-If you don't want to use the proxy, you can configure the script to send requests from your own computer by importing the `requests` library and changing `response = opener.open(url)` to `response = requests.get(url)` on line 286 of the `get_match_details.py` script.
+If you don't want to use a proxy, you can configure the scripts to not use one by removing the declaration of the `opener` variable at the top of the `get_match_urls.py` and `get_match_details.py` files and replacing them with `opener = urllib.request.build_opener()`.
 
 ## Data
 
