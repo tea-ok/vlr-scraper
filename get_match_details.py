@@ -383,8 +383,9 @@ for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
             log_file.write(url + '\n')
     time.sleep(0.5)
 
-    if data:
-        with open('./data/scraped_data.json', 'a') as data_file:
-            for item in data:
-                json.dump(item, data_file)
-                data_file.write('\n')
+# Save the remaining data
+if data:
+    with open('./data/scraped_data.json', 'a') as data_file:
+        for item in data:
+            json.dump(item, data_file)
+            data_file.write('\n')
