@@ -362,16 +362,19 @@ with open('./data/scraped_urls.log', 'a+') as log_file:
 
 # Get the URLs that haven't been scraped yet
 urls_to_scrape = list(urls - scraped_urls)
+urls_to_scrape = urls_to_scrape[:len(urls_to_scrape) // 2]
 
 data = []
+url_log = []
 for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
     scraped_data = scrape_match(url)
     if scraped_data is None:
         continue
 
     data.append(scraped_data)
+    url_log.append(url)
 
-    # Save the data and log the URL every 100 URLs
+    # Save the data and log the URLs every 100 URLs
     if i % 100 == 0 and i > 0:
         with open('./data/scraped_data.json', 'a') as data_file:
             for item in data:
@@ -380,7 +383,9 @@ for i, url in enumerate(tqdm(urls_to_scrape, desc='Scraping matches')):
             data = []
 
         with open('./data/scraped_urls.log', 'a') as log_file:
-            log_file.write(url + '\n')
+            for logged_url in url_log:
+                log_file.write(logged_url + '\n')
+            url_log = []
     time.sleep(0.5)
 
 # Save the remaining data
@@ -389,3 +394,7 @@ if data:
         for item in data:
             json.dump(item, data_file)
             data_file.write('\n')
+
+    with open('./data/scraped_urls.log', 'a') as log_file:
+        for logged_url in url_log:
+            log_file.write(logged_url + '\n')
